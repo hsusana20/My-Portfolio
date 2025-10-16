@@ -1,76 +1,234 @@
 <!DOCTYPE html>
-<html lang="en" dir="'ltr">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    <meta name="viewport" content="width=device-width", initial-scale="1.0" />
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-    <!-- navigation menu -->
+    <!-- Navigation Menu -->
     <nav>
-        <div class="nav-containrt">
+        <div class="nav-container">
             <div class="logo">
                 <span>Heiro</span>
             </div>
-            <div class ="links">
-                <div class ="link"><a href="home.html">Home</a></div>
-                <div class ="link"><a href="aboutme.html">About Me</a></div>
-                <div class ="link"><a href="#">Skills</a></div>
-                <div class ="link"><a href="#">Projects</a></div>
-                <div class ="link"><a href="#">Contacts</a></div>
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contacts</a>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
+
         <div class="dropdown">
             <div class="links">
-                <a href="home.html">Home</a>
-                <a href="aboutme.html">About Me</a>
-                <a href="skills.html">Skills</a>
-                <a href="#">Projects</a>
-                <a href="#">Contacts</a>
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contacts</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
-
         </div>
     </nav>
-    <section>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
         <div class="main-container">
             <div class="image">
-                <img src="../My-Portfolio/picture/mypicture.jpg" alt="">
+                <img src="../My-Portfolio/picture/mypicture.jpg" alt="Heiro Usana">
             </div>
+
             <div class="content">
-                <h1 date-aos="fade-left">
-                    Hey I'm 
-                    <span>Heiro</span>
+                <h1 data-aos="fade-left">
+                    Hey, I'm <span>Heiro</span>
                 </h1>
                 <div class="typewriter">
-                    I'm a 
-                    <span class"typewriter-text"></span>
-                    <label for=""></label>
+                    I'm a <span class="typewriter-text">Developer</span>
                 </div>
-                <p>I'm a BS Information Technology with Specialization Mobile and Internet student at Asia Pacific College with hands-on experience in full-stack web development using PHP (Laravel) and front-end design using HTML, CSS, and JavaScript. 
-                   I’m passionate about creating modern, responsive, and user-friendly websites and mobile applications that deliver great user experiences.
+                <p>
+                    I'm a BS Information Technology student with a specialization in Mobile and Internet at Asia Pacific College. 
+                    I have hands-on experience in full-stack web development using <strong>PHP (Laravel)</strong> 
+                    and front-end design with <strong>HTML, CSS, and JavaScript</strong>. 
+                    I'm passionate about creating modern, responsive, and user-friendly web and mobile applications that deliver great user experiences.
                 </p>
+
                 <div class="social-links">
-                    <a href="https://github.com/hsusana20" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.facebook.com/heiro.usana.5" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="www.linkedin.com/in/heirousana" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
+                    <a href="https://github.com/hsusana20" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/heiro.usana.5" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/heirousana" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
+
                 <div class="btn">
                     <button>Hire Me</button>
-
                 </div>
             </div>
         </div>
-
     </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title"><span>About Me</span></div>
+            <div class="about-details">
+                <div class="left">
+                    <img src="../My-Portfolio/picture/mypicture.jpg" alt="Heiro Usana">
+                </div>
+                <div class="right">
+                    <div class="topic">Coding Is My Passion</div>
+                    <p>
+                        Coding is my passion because it allows me to turn ideas into real, functional applications that help people. 
+                        I enjoy solving problems through logic and creativity, and I find satisfaction in seeing my code come to life
+                        whether it's a responsive website or a mobile app. Every project I build helps me grow as a developer 
+                        and motivates me to keep learning new technologies.
+                    </p>
+
+                    <div class="topic">Continuous Learning Is My Goal</div>
+                    <p>
+                        Continuous learning is my goal because technology is always evolving, and I want to stay ahead by constantly improving my skills. 
+                        I enjoy exploring new frameworks like React and Angular, and I believe every project is an opportunity to grow
+                        not only as a developer but also as a problem solver. I see learning as a lifelong journey that helps me adapt, innovate, 
+                        and contribute effectively to any team I'm part of.
+                    </p>
+
+                    <div class="button">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="content">
+            <div class="title"><span>My Skills</span></div>
+            <div class="skills-details">
+                <div class="text">
+                    <div class="topic">Skills Reflect My Knowledge</div>
+                    <p data-aos="fade-right">
+                        My skills reflect my journey as an IT student and aspiring front-end developer. 
+                        I'm continuously learning new tools and frameworks to enhance my development process 
+                        and deliver better user experiences.
+                    </p>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="category-soft">
+                    <div class="soft-skills">My Soft Skills</div>
+                </div>
+                <div class="boxes">
+                    <div class="box"><div class="topic">Adaptability</div><div class="skill-bar"><div class="progress" style="width: 90%"></div></div><div class="per">90%</div></div>
+                    <div class="box"><div class="topic">Team Collaboration</div><div class="skill-bar"><div class="progress" style="width: 90%"></div></div><div class="per">90%</div></div>
+                    <div class="box"><div class="topic">Time Management</div><div class="skill-bar"><div class="progress" style="width: 80%"></div></div><div class="per">80%</div></div>
+                    <div class="box"><div class="topic">Problem-Solving</div><div class="skill-bar"><div class="progress" style="width: 80%"></div></div><div class="per">80%</div></div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="category-technical">
+                    <div class="technical-skills">My Technical Skills</div>
+                </div>
+                <div class="boxes">
+                    <div class="box"><div class="topic">HTML</div><div class="skill-bar"><div class="progress" style="width: 95%"></div></div><div class="per">95%</div></div>
+                    <div class="box"><div class="topic">CSS</div><div class="skill-bar"><div class="progress" style="width: 95%"></div></div><div class="per">95%</div></div>
+                    <div class="box"><div class="topic">JavaScript</div><div class="skill-bar"><div class="progress" style="width: 90%"></div></div><div class="per">90%</div></div>
+                    <div class="box"><div class="topic">PHP/Laravel</div><div class="skill-bar"><div class="progress" style="width: 90%"></div></div><div class="per">90%</div></div>
+                    <div class="box"><div class="topic">Android Studio</div><div class="skill-bar"><div class="progress" style="width: 85%"></div></div><div class="per">85%</div></div>
+                    <div class="box"><div class="topic">Flutter</div><div class="skill-bar"><div class="progress" style="width: 85%"></div></div><div class="per">85%</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="content">
+            <div class="title"><span>My Projects</span></div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-vault"></i></div>
+                    <div class="topic">AshenKeep - Vault Application System</div>
+                    <p>
+                        A full-stack web application developed using <strong>PHP (Laravel)</strong> and <strong>MySQL</strong>. 
+                        The system allows users to apply for digital vaults, submit requirements, and manage ownership securely. 
+                        I worked as the <strong>Full-Stack Developer</strong> responsible for both back-end logic and front-end design.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <div class="topic">Bamboo Verse Application</div>
+                    <p>
+                        A mobile application project built using <strong>Android Studio</strong>, where I served as the <strong>Front-End Developer</strong>. 
+                        I designed the app interface using <strong>Figma</strong> and implemented core user features to ensure smooth and intuitive navigation.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <div class="topic">AlwaysOnTrack – IoT Health-Based Monitoring</div>
+                    <p>
+                        A health monitoring application developed with <strong>Flutter</strong> and IoT integration. 
+                        The app tracks real-time health metrics and displays them through a user-friendly interface. 
+                        I contributed as the <strong>Front-End Developer</strong>, focusing on usability and responsive design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="content">
+            <div class="title"><span>Contact Me</span></div>
+            <div class="text">
+                <div class="topic">Let's Connect!</div>
+                <p>
+                    I'm always open to new opportunities, collaborations, or even just a friendly chat about web and mobile development. 
+                    Feel free to reach out through any of the platforms below I'd love to hear from you!
+                </p>
+
+                <div class="contact-info">
+                    <div class="info-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Email:</span>
+                        <a href="mailto:blackyusana123@gmail.com">blackyusana123@gmail.com</a> | 
+                        <a href="mailto:heirousana27@gmail.com">heirousana27@gmail.com</a>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Phone:</span>
+                        <a href="tel:+639636712339">+63 963 671 2339</a>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn:</span>
+                        <a href="https://www.linkedin.com/in/heirousana" target="_blank">linkedin.com/in/heirousana</a>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub:</span>
+                        <a href="https://github.com/hsusana20" target="_blank">github.com/hsusana20</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
